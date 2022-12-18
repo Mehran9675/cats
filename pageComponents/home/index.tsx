@@ -3,7 +3,7 @@ import axios from "axios";
 import { useInView } from "react-intersection-observer";
 import type { CatsT, CatT } from "common/types";
 import makeQuery from "common/functions/makeQuery";
-import Show from "common/utility/show";
+import Show from "common/components/utility/show";
 import { QUERIES } from "services/queries.enum";
 import { END_POINTS_CLIENT } from "services/endPoints.enum";
 import Cat from "./components/cat";

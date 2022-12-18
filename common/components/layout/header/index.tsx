@@ -1,13 +1,13 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Show from "common/utility/show";
+import Show from "common/components/utility/show";
 import DropDown from "./components/dropDown";
-import ROUTES from "../../routes.enum";
+import ROUTES from "../../../routes.enum";
 import { QUERIES } from "services/queries.enum";
 import styles from "./styles.module.scss";
-import useFetch from "../../hooks/useFetch";
+import useFetch from "../../../hooks/useFetch";
 import { END_POINTS_CLIENT } from "services/endPoints.enum";
-import { Categories, Category } from "../../types";
+import { Categories, Category } from "../../../types";
 import { useCallback, useMemo } from "react";
 
 const Header = () => {

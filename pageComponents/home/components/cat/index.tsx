@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Breed, CatT } from "common/types";
 import ROUTES from "common/routes.enum";
 import styles from "./styles.module.scss";
-import Show from "common/utility/show";
+import Show from "common/components/utility/show";
 import { useRouter } from "next/router";
 
 const Cat = (props: { data: CatT }) => {
