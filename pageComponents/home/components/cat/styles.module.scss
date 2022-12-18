@@ -1,0 +1,44 @@
+@use "common/styles/variables" as v;
+.cat {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  object-fit: contain;
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  img {
+    transition: all 600ms;
+    object-fit: cover;
+    object-position: top;
+    max-width: 18rem;
+    max-height: 13rem;
+  }
+  > span {
+    position: absolute;
+    font-size: 2rem;
+    padding: 0.2rem 2rem;
+    background: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    span {
+      color: black;
+    }
+  }
+  @media screen and (min-width: v.$mobile-break-point) {
+    img {
+      max-width: unset;
+      max-height: unset;
+    }
+    > span {
+      width: max-content;
+      text-align: left;
+      padding: 1rem 2rem;
+    }
+  }
+}

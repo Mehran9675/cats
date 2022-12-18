@@ -1,0 +1,21 @@
+.breed-description {
+  width: 100%;
+  max-width: 45rem;
+  min-height: 40rem;
+  padding: 1rem;
+  h2 {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 2rem;
+    text-align: justify;
+  }
+}
+
+.cat-image {
+  object-fit: cover;
+  object-position: top;
+}

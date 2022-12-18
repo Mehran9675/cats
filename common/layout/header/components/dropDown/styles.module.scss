@@ -1,0 +1,41 @@
+.filter {
+  --isDropDownVisible: 0;
+
+  position: relative;
+  margin-left: auto;
+  .title {
+    font-size: 2rem;
+    display: flex;
+    text-transform: uppercase;
+    pre {
+      display: block;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      transform: rotate(180deg) translateY(5px);
+    }
+  }
+  &:hover {
+    --isDropDownVisible: 2;
+  }
+  .drop-down {
+    opacity: var(--isDropDownVisible);
+    z-index: var(--isDropDownVisible);
+    overflow: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    max-height: 50rem;
+    width: max-content;
+    top: 110%;
+    left: -10px;
+    padding: 0.5rem;
+    transition: opacity 300ms;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    > * + * {
+      margin-top: 0.5rem;
+    }
+  }
+}

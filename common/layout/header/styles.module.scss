@@ -1,0 +1,40 @@
+@use "common/styles/variables" as v;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem 5rem;
+  position: relative;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  label {
+    position: absolute;
+    bottom: 0;
+    left: 1.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  > div {
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    span {
+      font-size: 2rem;
+      font-weight: lighter;
+      cursor: pointer;
+    }
+    > * {
+      margin: 0 2rem;
+    }
+  }
+  @media screen and (min-width: v.$mobile-break-point) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0 7rem;
+  }
+}
